@@ -1,0 +1,20 @@
+<html>
+<head>
+  <!-- some styles to make tags look nice -->
+  <!-- you can define your own styles -->
+  <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <image src="party.jpg" id='image'/>
+</body>
+  <!-- jquery required -->
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- the pluggin -->
+  <script type="text/javascript" src='with_tags.js'></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#image').withTags({tags: [{x: 150, y: 370, label: 'Waldo Uribe', tooltip: "You can contact me at <a href='http://www.twitter.com/waldouribe' target:'_blank'>@waldouribe</a>"}, {x: 350, y: 370, label: 'Nicole', tooltip: 'This is my girlfriend, back off!'},
+        {x: 550, y: 370, label: 'Miller Girl', tooltip: 'Auuuuuuu'}]});
+    });
+  </script>
+</html>
